@@ -1,5 +1,5 @@
+import dataUser from '../data/user';
 import { Profile } from './Profile/Profile';
-import profile from '../data/user';
 
 export const App = () => {
   return (
@@ -13,7 +13,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Profile item={profile} />      
+      <Profile props={dataUser} />
     </div>
   );
 };

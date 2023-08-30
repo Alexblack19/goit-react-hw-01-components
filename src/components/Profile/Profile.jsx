@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
 
-export const Profile = ({
-  item: {
+export const Profile = ({ props }) => {
+  const {
     username,
     tag,
     location,
     avatar,
     stats: { followers, views, likes },
-  },
-}) => {
+  } = props;
   return (
     <div className="profile">
       <div className="description">
@@ -37,7 +36,7 @@ export const Profile = ({
 };
 
 Profile.propTypes = {
-  item: PropTypes.shape({
+  props: PropTypes.shape({
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
