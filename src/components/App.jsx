@@ -1,4 +1,4 @@
-import dataUser from '../data/user';
+import userData from '../data/user';
 import { Profile } from './Profile/Profile';
 
 export const App = () => {
@@ -13,7 +13,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Profile props={dataUser} />
+      <Profile props={userData} />
     </div>
   );
 };
