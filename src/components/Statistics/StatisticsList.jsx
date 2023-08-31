@@ -26,7 +26,7 @@ StatisticsList.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
     })
-  ),
+  ).isRequired,
 };
 
 function getRandomHexColor() {
