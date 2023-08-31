@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types';
 import { Friend } from './Friend';
 
-export function FriendList({ items }) {
+export const FriendList = ({ items }) => {
   return (
-    <ul>
+    <ul className="friend-list">
       {items.map(item => (
         <li key={item.id} className="item">
-          <Friend items={items} />
+          <Friend item={item} />
         </li>
       ))}
     </ul>
   );
-}
+};
 
 FriendList.propTypes = {
   items: PropTypes.arrayOf(
