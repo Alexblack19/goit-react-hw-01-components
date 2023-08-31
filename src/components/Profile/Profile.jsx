@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export const Profile = ({
-  props: {
+  item: {
     username,
     tag,
     location,
@@ -37,7 +37,7 @@ export const Profile = ({
 };
 
 Profile.propTypes = {
-  props: PropTypes.shape({
+  item: PropTypes.shape({
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,

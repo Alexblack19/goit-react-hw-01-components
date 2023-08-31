@@ -1,5 +1,7 @@
-import userData from '../data/user';
 import { Profile } from './Profile/Profile';
+import { FriendList } from './FriendList/FriendList';
+import user from '../data/user';
+import friends from '../data/friends';
 
 export const App = () => {
   return (
@@ -13,7 +15,8 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Profile props={userData} />
+      <Profile item={user} />
+      <FriendList items={friends} />
     </div>
   );
 };
