@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import {TransactionHistoryItem} from './TransactionHistoryItem';
 
 
-export const TransactionHistoryTable = ({ items }) => {
+export const TransactionHistory = ({ items }) => {
   return (
     <table className="transaction-history">
       <thead>
@@ -24,7 +24,7 @@ export const TransactionHistoryTable = ({ items }) => {
   );
 };
 
-TransactionHistoryTable.propTypes = {
+TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

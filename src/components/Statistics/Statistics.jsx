@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { StatisticsItem } from './StatisticsItem';
 
-export const StatisticsList = ({ title, items }) => {
+export const Statistics = ({ title, items }) => {
   return (
     <section className="statistics">
       {title && <h2 className="title">{title}</h2>}
@@ -20,7 +20,7 @@ export const StatisticsList = ({ title, items }) => {
   );
 };
 
-StatisticsList.propTypes = {
+Statistics.propTypes = {
   title: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(
     PropTypes.shape({
