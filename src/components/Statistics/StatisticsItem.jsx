@@ -7,7 +7,11 @@ export const StatisticsItem = ({ title, items }) => {
       {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
         {items.map(item => (
-          <li key={item.id} className="item">
+          <li
+            key={item.id}
+            className="item"
+            style={{ backgroundColor: getRandomHexColor() }}
+          >
             <Statistics item={item} />
           </li>
         ))}
@@ -24,3 +28,9 @@ StatisticsItem.propTypes = {
     })
   ),
 };
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
