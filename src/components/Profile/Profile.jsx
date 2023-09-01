@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {Section, Description} from './Profile.styled'
+import { Section, Container, Description, Avatar, Name, Tag, Location } from './Profile.styled';
 
 export const Profile = ({
   item: {
@@ -12,27 +12,29 @@ export const Profile = ({
 }) => {
   return (
     <Section>
-      <Description>
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </Description>
+      <Container>
+        <Description>
+          <Avatar src={avatar} alt="User avatar" />
+          <Name className="name">{username}</Name>
+          <Tag className="tag">@{tag}</Tag>
+          <Location className="location">{location}</Location>
+        </Description>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
+        <ul className="stats">
+          <li>
+            <span className="label">Followers</span>
+            <span className="quantity">{followers}</span>
+          </li>
+          <li>
+            <span className="label">Views</span>
+            <span className="quantity">{views}</span>
+          </li>
+          <li>
+            <span className="label">Likes</span>
+            <span className="quantity">{likes}</span>
+          </li>
+        </ul>
+      </Container>
     </Section>
   );
 };

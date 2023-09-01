@@ -7,6 +7,8 @@ import stats from '../data/data.json';
 import friends from '../data/friends';
 import transactions from '../data/transactions.json';
 
+import { GlobalStyle } from './GlobalStyle';
+
 export const App = () => {
   return (
     <div
@@ -19,6 +21,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
+      <GlobalStyle />
       <Profile item={user} />
       <Statistics title="Upload stats" items={stats} />
       <FriendList items={friends} />
