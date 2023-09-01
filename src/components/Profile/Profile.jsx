@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {Section} from './Profile.styled'
+import {Section, Description} from './Profile.styled'
 
 export const Profile = ({
   item: {
@@ -11,13 +11,13 @@ export const Profile = ({
   },
 }) => {
   return (
-    <Section className="profile">
-      <div className="description">
+    <Section>
+      <Description>
         <img src={avatar} alt="User avatar" className="avatar" />
         <p className="name">{username}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
-      </div>
+      </Description>
 
       <ul className="stats">
         <li>
