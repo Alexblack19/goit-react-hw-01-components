@@ -15,8 +15,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 28px 0px;
   text-align: center;
   text-transform: uppercase;
   color: #515151;
@@ -35,4 +34,14 @@ export const Li = styled.li`
   flex-basis: calc(100% / 5);
   align-items: center;
   color: #ffffff;
+`;
+
+export const Label = styled.span`
+  margin-bottom: 10px;
+  font-size: 18px;
+`;
+
+export const Percentage = styled.span`
+  font-weight: 600;
+  font-size: 24px;
 `;

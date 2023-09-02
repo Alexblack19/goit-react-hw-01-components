@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
+  background-color: #404145;
 }
 
 code {
@@ -26,5 +27,5 @@ ul {
   margin-bottom: 0px;
   padding-left: 0px;
   list-style: none;
-}
+}  
 `;
