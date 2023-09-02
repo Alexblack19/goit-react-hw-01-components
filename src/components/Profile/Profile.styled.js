@@ -69,5 +69,13 @@ export const Li = styled.li`
   background-color: #f1f5f8;
 `;
 
-export const Label = styled.span``
-export const Quantity = styled.span``
+export const Label = styled.span`
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #8f969e;
+`;
+
+export const Quantity = styled.span`
+  font-weight: 600;
+  font-size: 24px;
+`;

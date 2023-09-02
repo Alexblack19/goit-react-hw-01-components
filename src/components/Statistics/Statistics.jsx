@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import { StatisticsItem } from './StatisticsItem';
+import { Section } from './Statistics.styled';
 
 export const Statistics = ({ title, items }) => {
   return (
-    <section className="statistics">
+    <Section>
       {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
         {items.map(item => (
@@ -16,7 +17,7 @@ export const Statistics = ({ title, items }) => {
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   );
 };
 
