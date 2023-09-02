@@ -33,16 +33,16 @@ export const Profile = ({
 
           <Stats>
             <Li>
-              <Label className="label">Followers</Label>
-              <Quantity className="quantity">{followers}</Quantity>
+              <Label>Followers</Label>
+              <Quantity>{followers}</Quantity>
             </Li>
             <Li>
-              <Label className="label">Views</Label>
-              <Quantity className="quantity">{views}</Quantity>
+              <Label>Views</Label>
+              <Quantity>{views}</Quantity>
             </Li>
             <Li>
-              <Label className="label">Likes</Label>
-              <Quantity className="quantity">{likes}</Quantity>
+              <Label>Likes</Label>
+              <Quantity>{likes}</Quantity>
             </Li>
           </Stats>
         </CardWrap>

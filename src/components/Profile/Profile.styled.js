@@ -11,7 +11,7 @@ export const Container = styled.div`
   margin-right: auto;
   padding: 64px;
   background-color: #e4eaf0;
-  box-shadow: 7px 7px 10px 0px rgba(113, 106, 97, 1);
+  box-shadow: 5px 5px 5px 0px rgba(179, 179, 179, 1);
 `;
 
 export const CardWrap = styled.div`

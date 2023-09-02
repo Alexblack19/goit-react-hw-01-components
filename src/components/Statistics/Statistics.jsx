@@ -1,22 +1,20 @@
 import PropTypes from 'prop-types';
 import { StatisticsItem } from './StatisticsItem';
-import { Section } from './Statistics.styled';
+import { Section, Container, Title, StatList, Li } from './Statistics.styled';
 
 export const Statistics = ({ title, items }) => {
   return (
     <Section>
-      {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">
-        {items.map(item => (
-          <li
-            key={item.id}
-            className="item"
-            style={{ backgroundColor: getRandomHexColor() }}
-          >
-            <StatisticsItem item={item} />
-          </li>
-        ))}
-      </ul>
+      <Container>
+        {title && <Title>{title}</Title>}
+        <StatList>
+          {items.map(item => (
+            <Li key={item.id} style={{ backgroundColor: getRandomHexColor() }}>
+              <StatisticsItem item={item} />
+            </Li>
+          ))}
+        </StatList>
+      </Container>
     </Section>
   );
 };
