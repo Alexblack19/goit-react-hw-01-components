@@ -4,7 +4,7 @@ import { Section, Container, Li } from './FriendList.styled';
 
 export const FriendList = ({ items }) => {
   return (
-    <Section>      
+    <Section>
       <Container>
         {items.map(item => (
           <Li key={item.id} className="item">
