@@ -23,7 +23,10 @@ export const Status = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: ${({ isonline }) => (isonline ? '#41A842' : '#FF464F')};
+  background-color: ${props => {
+    return props.pr ? 'green' : 'red';
+  }};
+  /* background-color: ${({ isOnline }) => {return isOnline ? '#41A842' : '#FF464F'}}; */
 `;
 
 
