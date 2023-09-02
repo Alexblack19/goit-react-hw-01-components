@@ -9,6 +9,8 @@ import {
   Location,
   Stats,
   Li,
+  Label,
+  Quantity,
 } from './Profile.styled';
 
 export const Profile = ({
@@ -31,16 +33,16 @@ export const Profile = ({
 
           <Stats>
             <Li>
-              <span className="label">Followers</span>
-              <span className="quantity">{followers}</span>
+              <Label className="label">Followers</Label>
+              <Quantity className="quantity">{followers}</Quantity>
             </Li>
             <Li>
-              <span className="label">Views</span>
-              <span className="quantity">{views}</span>
+              <Label className="label">Views</Label>
+              <Quantity className="quantity">{views}</Quantity>
             </Li>
             <Li>
-              <span className="label">Likes</span>
-              <span className="quantity">{likes}</span>
+              <Label className="label">Likes</Label>
+              <Quantity className="quantity">{likes}</Quantity>
             </Li>
           </Stats>
         </CardWrap>

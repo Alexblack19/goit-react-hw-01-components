@@ -68,3 +68,6 @@ export const Li = styled.li`
   border: 1px solid #e4eaf0;
   background-color: #f1f5f8;
 `;
+
+export const Label = styled.span``
+export const Quantity = styled.span``
