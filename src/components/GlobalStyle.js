@@ -7,7 +7,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 code {
@@ -21,7 +21,10 @@ p {
   margin-bottom: 0px;
 }
 
-ul {
+ul {  
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
   list-style: none;
 }
 `;
