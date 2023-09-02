@@ -15,6 +15,9 @@ export const Container = styled.ul`
 `;
 
 export const Li = styled.li`
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
   display: flex;
   align-items: center;
   gap: 12px;
@@ -22,9 +25,10 @@ export const Li = styled.li`
   background-color: #fdfdfd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  &:hover {
+    box-shadow: 4px 4px 1px rgba(46, 47, 66, 0.3);
+  }
 `;
-
-
 
 export const Status = styled.span`
   display: block;
@@ -38,9 +42,6 @@ export const Avatar = styled.img`
   width: 68px;
   background-color: #e4eaf0;
   border-radius: 8px;
-  :hover{
-    margin-bottom: 16px;
-  };
 `;
 
 export const Name = styled.p`
