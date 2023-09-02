@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`  
-  padding: 40px 0px;
+export const Section = styled.section`
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 export const Container = styled.div`
@@ -9,13 +10,16 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 64px;
-  background-color: #bab5ae;
-  box-shadow: 7px 7px 10px 0px rgba(113, 106, 97, 1); 
-  border-radius: 5px;
+  background-color: #e4eaf0;
+  box-shadow: 7px 7px 10px 0px rgba(113, 106, 97, 1);
 `;
 
-export const Description = styled.div`
-  padding: 48px 60px;
+export const CardWrap = styled.div`
+  padding-top: 48px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
   background-color: #ffffff;
 `;
 
@@ -23,8 +27,8 @@ export const Avatar = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 60%;
-  background-color: #bab5ae;  
+  max-width: 40%;
+  background-color: #bab5ae;
   border-radius: 50%;
 `;
 
@@ -44,7 +48,23 @@ export const Tag = styled.p`
 `;
 
 export const Location = styled.p`
+  margin-bottom: 48px;
   text-align: center;
   font-size: 28px;
   color: #8f969e;
+`;
+
+export const Stats = styled.ul`
+  display: flex;
+`;
+
+export const Li = styled.li`
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 3);
+  align-items: center;
+  border: 1px solid #e4eaf0;
+  background-color: #f1f5f8;
 `;

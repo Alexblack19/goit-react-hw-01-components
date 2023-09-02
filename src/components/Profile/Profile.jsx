@@ -1,5 +1,15 @@
 import PropTypes from 'prop-types';
-import { Section, Container, Description, Avatar, Name, Tag, Location } from './Profile.styled';
+import {
+  Section,
+  Container,
+  CardWrap,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+  Stats,
+  Li,
+} from './Profile.styled';
 
 export const Profile = ({
   item: {
@@ -13,27 +23,27 @@ export const Profile = ({
   return (
     <Section>
       <Container>
-        <Description>
+        <CardWrap>
           <Avatar src={avatar} alt="User avatar" />
-          <Name className="name">{username}</Name>
-          <Tag className="tag">@{tag}</Tag>
-          <Location className="location">{location}</Location>
-        </Description>
+          <Name>{username}</Name>
+          <Tag>@{tag}</Tag>
+          <Location>{location}</Location>
 
-        <ul className="stats">
-          <li>
-            <span className="label">Followers</span>
-            <span className="quantity">{followers}</span>
-          </li>
-          <li>
-            <span className="label">Views</span>
-            <span className="quantity">{views}</span>
-          </li>
-          <li>
-            <span className="label">Likes</span>
-            <span className="quantity">{likes}</span>
-          </li>
-        </ul>
+          <Stats>
+            <Li>
+              <span className="label">Followers</span>
+              <span className="quantity">{followers}</span>
+            </Li>
+            <Li>
+              <span className="label">Views</span>
+              <span className="quantity">{views}</span>
+            </Li>
+            <Li>
+              <span className="label">Likes</span>
+              <span className="quantity">{likes}</span>
+            </Li>
+          </Stats>
+        </CardWrap>
       </Container>
     </Section>
   );
