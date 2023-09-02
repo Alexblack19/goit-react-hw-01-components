@@ -5,7 +5,7 @@ import { Status } from './FriendList.styled';
 export const FriendItem = ({ item: { isOnline, avatar, name } }) => {   
   return (
     <>
-      <Status pr={isOnline}></Status>
+      <Status status={isOnline}></Status>
       <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <p className="name">{name}</p>
     </>
