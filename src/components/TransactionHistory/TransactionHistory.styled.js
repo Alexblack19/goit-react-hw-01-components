@@ -9,7 +9,7 @@ export const Container = styled.div`
   max-width: 540px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  padding: 40px;
   background-color: #e4eaf0;
   box-shadow: 5px 5px 5px 0px rgba(179, 179, 179, 1);
 `;
@@ -17,6 +17,7 @@ export const Container = styled.div`
 export const Table = styled.table`
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   border-collapse: collapse;
   border-radius: 4px;
   overflow: hidden;
@@ -26,7 +27,9 @@ export const Table = styled.table`
 `;
 
 export const Th = styled.th`
-  padding: 12px 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: calc(100% / 3);
   text-transform: uppercase;
   &:nth-child(2) {
     border-left: 1px solid #ffffff;
