@@ -35,8 +35,8 @@ export const Status = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: ${({ status }) => {
-    return status ? '#41A842' : '#FF464F';
+  background-color: ${({ $status }) => {
+    return $status ? '#41A842' : '#FF464F';
   }};
 `;
 
